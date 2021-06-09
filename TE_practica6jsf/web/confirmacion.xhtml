@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>PAGINA DE CONFIRMACION</h1>
+        <h:panelGrid columns="2">
+            
+            
+            <h:outputText value="nombre:"/>
+            <h:outputText value="#{registroBean.nombre}"/>
+            
+            <h:outputText value="Apellidos:"/>
+            <h:outputText value="#{registroBean.apellidos}"/>
+            
+         
+            <h:outputText value="correo:"/>
+            <h:outputText value="#{registroBean.correo}"/>
+            
+             <h:outputText value="Contraseña:"/>
+             <h:outputText value="#{registroBean.contraseña}"/>
+            
+        </h:panelGrid>
+        <h:form>
+            <h:commandLink action="indexusuario" value="retorno al registro usuario"/>
+        </h:form>
+    </h:body>
+</html>
+
+

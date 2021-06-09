@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>INSCRIPCION EN CUSRSO</h1>
+        <h:form>
+            <h:panelGrid columns="3" >
+
+
+                <h:outputLabel value="Nombre:" for="nombre"/>
+                <h:inputText id="nombre" label="Nombre" required="true" value="#{incripBean.nombre}"/>
+                <h:message for="nombre"/>
+
+                <h:outputLabel value="Apellido:" for="apellido" />
+                <h:inputText id="apellidos" label="Apellidos" required="true" value="#{incripBean.apellidos}"/>
+                <h:message for="apellidos"/>
+
+           
+
+                <h:outputLabel value="Curso:" for="curso" />
+                <h:selectOneMenu id="curso" label="curso" value="#{incripBean.curso }">
+                    <f:selectItem itemLabel="seleccion" itemValue="" />
+                    <f:selectItem itemLabel="1°" itemValue="primero" />
+                    <f:selectItem itemLabel="2°" itemValue="segundo "/>
+                    <f:selectItem itemLabel="3°" itemValue="tercero"/>
+                </h:selectOneMenu>
+                
+
+                <h:panelGroup/>
+                <h:commandButton id="regisrto" value="Enviar" action="inscripcion"/>
+
+             
+
+            </h:panelGrid>
+                
+        </h:form>
+    </h:body>
+</html>
+
